@@ -8,6 +8,7 @@ const Navbar = () => {
         src="/assets/shared/desktop/logo-dark.png"
         width={202}
         height={27}
+        alt="logo"
       />
       <IconHamburger className="w-[24px] h-[20px]" />
     </div>

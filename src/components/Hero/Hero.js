@@ -32,9 +32,10 @@ const Hero = () => {
         <Image
           quality={100}
           fill
-          objectFit="cover"
+          alt="hero phone"
+          priority
           src="/assets/home/desktop/image-hero-phone.png"
-          className=" asbolute object-top"
+          className=" asbolute object-top object-cover"
         />
       </div>
     </main>
