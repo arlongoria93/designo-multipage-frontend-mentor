@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Navbar from "@/components/Navbar/navbar";
 import { Jost } from "next/font/google";
 import { BackgroundPatternHeroHome } from "@/components/svgs";
@@ -11,10 +12,12 @@ export default function Home() {
     <>
       <Navbar />{" "}
       <main
-        className={`${jost.className} w-[375px] h-[843px] bg-[#E7816B] flex flex-col z-10`}
+        className={`${jost.className} w-[375px] h-[843px] bg-[#E7816B] flex flex-col z-10 overflow-clip`}
       >
-        <BackgroundPatternHeroHome className="self-center mt-[102px] h-[640px] w-[640px] ml-[265px] absolute" />
-        <div className="flex flex-col gap-[14px] mt-[80px] w-[327px] self-center">
+        <div className="relative">
+          <BackgroundPatternHeroHome className="self-center mt-[102px] h-[640px] w-[640px] absolute overflow-hidden" />
+        </div>
+        <div className="flex flex-col gap-[14px] mt-[80px] w-[327px] self-center z-20">
           <h1 className="text-white text-center font-medium text-[32px] leading-[36px]">
             Award-winning custom designs and digital branding solutions
           </h1>
@@ -24,9 +27,17 @@ export default function Home() {
             experiences. Find out more about our services.
           </p>
           <button className="mt-[24px] font-medium text-[15px] bg-white w-[152px] h-[56px] rounded-[8px] tracking-[1px] self-center">
-            {" "}
             LEARN MORE
           </button>
+        </div>
+        <div className="relative w-[625px] h-[700px] self-center -mt-[90px] ">
+          <Image
+            quality={100}
+            fill
+            objectFit="cover"
+            src="/assets/home/desktop/image-hero-phone.png"
+            className=" asbolute object-top"
+          />
         </div>
       </main>
     </>
