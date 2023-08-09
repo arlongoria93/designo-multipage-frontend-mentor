@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { IconRightArrow } from "@/components/svgs";
 
-const MobileCardLink = ({ name, imageUrl, alt }) => {
+const TabletCardLink = ({ name, imageUrl, alt }) => {
   return (
-    <div className="bg-[#000] w-[327px] flex flex-col items-center rounded-[15px] h-[250px] relative justify-center">
+    <div className="bg-[#000] w-[689px] flex flex-col items-center rounded-[15px] h-[250px] relative justify-center">
       <Image
         src={imageUrl}
         layout="fill"
@@ -32,4 +32,4 @@ const MobileCardLink = ({ name, imageUrl, alt }) => {
   );
 };
 
-export default MobileCardLink;
+export default TabletCardLink;

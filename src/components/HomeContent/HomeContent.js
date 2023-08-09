@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import MobileCardLink from "@/components/MobileCardLink/MobileCardLink";
+import TabletCardLink from "../TabletCardLink/TabletCardLink";
 import {
   BackgroundPatternSmallCircle,
   IllustrationFriendly,
@@ -22,27 +23,54 @@ const mobileCardLinks = [
     "Graphic Design",
   ],
 ];
+const TabletCardLinks = [
+  ["WEB DESIGN", "/assets/home/tablet/image-web-design.jpg", "Web Design"],
+  ["APP DESIGN", "/assets/home/tablet/image-app-design.jpg", "App Design"],
+  [
+    "GRAPHIC DESIGN",
+    "/assets/home/tablet/image-graphic-design.jpg",
+    "Graphic Design",
+  ],
+];
+
 const HomeContent = () => {
   return (
     <div className="  mt-[120px] ">
       <div className="flex flex-col gap-[24px] items-center">
-        {mobileCardLinks.map((image) => (
-          <MobileCardLink alt={image[2]} name={image[0]} imageUrl={image[1]} />
-        ))}
+        <div className="md:hidden flex flex-col gap-[24px] items-center">
+          {mobileCardLinks.map((image) => (
+            <MobileCardLink
+              alt={image[2]}
+              name={image[0]}
+              imageUrl={image[1]}
+            />
+          ))}
+        </div>
+        <div className="hidden md:flex flex-col gap-[24px] items-center">
+          {TabletCardLinks.map((image) => (
+            <TabletCardLink
+              alt={image[2]}
+              name={image[0]}
+              imageUrl={image[1]}
+            />
+          ))}
+        </div>
         <div className="flex flex-col mt-[96px] items-center justify-center gap-[80px]">
-          <div className="flex flex-col  justify-center  items-center">
+          <div className="flex flex-col md:flex-row  justify-center  items-center">
             <div className="relative w-[202px] h-[202px]">
               <BackgroundPatternSmallCircle className="-z-10 w-[202px] h-[202px]  absolute object-center" />
               <IllustrationPassionate className="w-full h-full z-10" />
             </div>
-            <h1 className="text-[20px] font-medium leading-[26px] tracking-[5px] text-[#333136] mb-[32px]">
-              PASSIONATE
-            </h1>
-            <p className="text-[16px] leading-[26px] text-center">
-              Each project starts with an in-depth brand research to ensure we
-              only create products that serve a purpose. We merge art, design,
-              and technology into exciting new solutions.
-            </p>
+            <div className="flex flex-col items-center md:items-start md:text-start w-[327px] md:w-[439px]">
+              <h1 className="text-[20px] font-medium leading-[26px] tracking-[5px] text-[#333136] mb-[32px]">
+                PASSIONATE
+              </h1>
+              <p className="text-[16px] leading-[26px] text-center md:text-start">
+                Each project starts with an in-depth brand research to ensure we
+                only create products that serve a purpose. We merge art, design,
+                and technology into exciting new solutions.
+              </p>
+            </div>
           </div>
           <div className="flex flex-col  justify-center  items-center">
             <div className="relative w-[202px] h-[202px]">
