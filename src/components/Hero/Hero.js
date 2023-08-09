@@ -10,7 +10,7 @@ const jost = Jost({
 const Hero = () => {
   return (
     <main
-      className={`${jost.className} w-[375px] h-[843px] bg-[#E7816B] flex flex-col z-10 overflow-clip`}
+      className={`${jost.className}  h-[843px] bg-[#E7816B] flex flex-col z-10 overflow-clip`}
     >
       <div className="relative">
         <BackgroundPatternHeroHome className="self-center mt-[102px] h-[640px] w-[640px] absolute overflow-hidden" />

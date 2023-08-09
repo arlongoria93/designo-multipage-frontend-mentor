@@ -24,13 +24,13 @@ const mobileCardLinks = [
 ];
 const HomeContent = () => {
   return (
-    <div className="w-[375px]  mt-[120px] ">
+    <div className="  mt-[120px] ">
       <div className="flex flex-col gap-[24px] items-center">
         {mobileCardLinks.map((image) => (
           <MobileCardLink alt={image[2]} name={image[0]} imageUrl={image[1]} />
         ))}
         <div className="flex flex-col mt-[96px] items-center justify-center gap-[80px]">
-          <div className="flex flex-col w-[327px] justify-center  items-center">
+          <div className="flex flex-col  justify-center  items-center">
             <div className="relative w-[202px] h-[202px]">
               <BackgroundPatternSmallCircle className="-z-10 w-[202px] h-[202px]  absolute object-center" />
               <IllustrationPassionate className="w-full h-full z-10" />
@@ -44,7 +44,7 @@ const HomeContent = () => {
               and technology into exciting new solutions.
             </p>
           </div>
-          <div className="flex flex-col w-[327px] justify-center  items-center">
+          <div className="flex flex-col  justify-center  items-center">
             <div className="relative w-[202px] h-[202px]">
               <BackgroundPatternSmallCircle className="-z-10 w-[202px] h-[202px]  absolute object-center" />
               <IllustrationResourceful className="w-full h-full z-10" />
@@ -58,7 +58,7 @@ const HomeContent = () => {
               It guarantees superior results that fulfill our clients’ needs.
             </p>
           </div>
-          <div className="flex flex-col w-[327px] justify-center  items-center">
+          <div className="flex flex-col justify-center  items-center">
             <div className="relative w-[202px] h-[202px]">
               <BackgroundPatternSmallCircle className="-z-10 w-[202px] h-[202px]  absolute object-center" />
               <IllustrationFriendly className="w-full h-full z-10" />
@@ -73,10 +73,10 @@ const HomeContent = () => {
             </p>
           </div>
         </div>
-        <div className="w-[375px] mt-[311px] flex flex-col items-center  bg-[#1D1C1E] h-[815px]">
+        <div className=" mt-[311px] flex flex-col items-center w-full bg-[#1D1C1E] h-[815px]">
           <div className="mt-[-189px] gap-[49px]  bg-[#E7816B] h-[379px] w-[327px] items-center justify-center rounded-[15px] flex flex-col overflow-hidden absolute">
             <BackgroundPatternDesignPagesIntroMobile className="w-[876px] -translate-x-[260px] h-[584px]   absolute" />
-            <div className="flex flex-col text-center w-[279px] gap-[6px]">
+            <div className="flex flex-col text-center  gap-[6px]">
               <h1 className="text-[32px] font-medium leading-9 text-white">
                 Let's talk about your project
               </h1>
