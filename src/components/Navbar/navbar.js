@@ -10,7 +10,18 @@ const Navbar = () => {
         height={27}
         alt="logo"
       />
-      <IconHamburger className="w-[24px] h-[20px]" />
+      <div className="flex flex-row items-center gap-[42px]">
+        <h1 className="hidden md:block text-[14px] leading-[14px] tracking-[2px]">
+          OUR COMPANY
+        </h1>
+        <h1 className="hidden md:block text-[14px] leading-[14px] tracking-[2px]">
+          LOCATIONS
+        </h1>
+        <h1 className="hidden md:block text-[14px] leading-[14px] tracking-[2px]">
+          CONTACT
+        </h1>
+      </div>
+      <IconHamburger className="w-[24px] h-[20px] md:hidden" />
     </div>
   );
 };
