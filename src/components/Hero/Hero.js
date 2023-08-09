@@ -13,7 +13,7 @@ const Hero = () => {
       className={`${jost.className} md:w-[689px] mx-auto border border-solid-2px  md:rounded-[15px]  h-[843px] bg-[#E7816B] flex flex-col z-10 overflow-clip`}
     >
       <div className="relative">
-        <BackgroundPatternHeroHome className="self-center translate-y-[16%] md:translate-y-[19%] translate-x-[-2%] md:translate-x-[26%]  h-[640px] w-[640px] absolute overflow-hidden " />
+        <BackgroundPatternHeroHome className="self-center translate-y-[16%] md:translate-y-[19%] translate-x-[-2%] md:translate-x-[26%]  h-[640px] w-[640px]  absolute overflow-hidden " />
       </div>
       <div className="flex flex-col gap-[14px] mt-[80px] w-[327px] md:w-[573px] self-center z-20 md:items-center">
         <h1 className="text-white text-center font-medium text-[32px] md:text-[48px] leading-[36px] md:leading-[48px]">
@@ -28,14 +28,14 @@ const Hero = () => {
           LEARN MORE
         </button>
       </div>
-      <div className="relative w-[625px] h-[700px] self-center -mt-[90px] ">
+      <div className="relative w-[625px] h-[924px] self-center -mt-[90px]  md:w-[620px] md:h-full md:-mt-[120px]">
         <Image
           quality={100}
           fill
           alt="hero phone"
           priority
           src="/assets/home/desktop/image-hero-phone.png"
-          className=" asbolute object-top object-cover"
+          className=" asbolute object-top object-cover "
         />
       </div>
     </main>
