@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Navbar from "@/components/Navbar/navbar";
 import Hero from "@/components/Hero/Hero";
 import MobileCardLink from "@/components/MobileCardLink/MobileCardLink";
@@ -6,7 +7,6 @@ import {
   IllustrationFriendly,
   IllustrationPassionate,
   IllustrationResourceful,
-  BackgroundPatternThreeCircles,
   BackgroundPatternDesignPagesIntroMobile,
 } from "@/components/svgs";
 
@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <>
       <Navbar /> <Hero />
-      <div className="w-[375px] h- mt-[120px]">
+      <div className="w-[375px]  mt-[120px]">
         <div className="flex flex-col gap-[24px] items-center">
           {mobileCardLinks.map((image) => (
             <MobileCardLink
@@ -76,8 +76,9 @@ export default function Home() {
                 give them the best experience a company can provide.
               </p>
             </div>
-            <div className="mt-[119px] gap-[49px]  bg-[#E7816B] h-[379px] w-[327px] items-center justify-center rounded-[15px] flex flex-col overflow-hidden relative">
-              {/* flip image horizontaly  */}
+          </div>
+          <div className="w-[375px] mt-[311px] flex flex-col items-center  bg-[#1D1C1E] h-[815px]">
+            <div className="mt-[-189px] gap-[49px]  bg-[#E7816B] h-[379px] w-[327px] items-center justify-center rounded-[15px] flex flex-col overflow-hidden absolute">
               <BackgroundPatternDesignPagesIntroMobile className="w-[876px] -translate-x-[260px] h-[584px]   absolute" />
               <div className="flex flex-col text-center w-[279px] gap-[6px]">
                 <h1 className="text-[32px] font-medium leading-9 text-white">
@@ -92,6 +93,33 @@ export default function Home() {
                 GET IN TOUCH
               </button>
             </div>
+            <div className="mt-[253px] h-[498px] flex flex-col w-full items-center gap-[32px]">
+              <Image
+                src="/assets/shared/desktop/logo-light.png"
+                width={202}
+                height={27}
+                alt="logo"
+              />
+              <div className="w-[327px] h-[1px] bg-[#fff]"></div>
+              <div className="flex flex-col items-center gap-[32px] text-white leading-[14px] tracking-[2px]">
+                <h1>OUR COMPANY</h1>
+                <h1>LOCATIONS</h1>
+                <h1>CONTACT</h1>
+              </div>
+              <div className="flex flex-col w-full gap-[40px]">
+                <div className="flex flex-col items-center leading-[26px] text-white opacity-[0.5]">
+                  <h1 className="font-bold">Designo Central Office</h1>
+                  <h1>3886 Wellington Street</h1>
+                  <h1>Toronto, Ontario M9C 3J5</h1>
+                </div>
+                <div className="flex flex-col items-center leading-[26px] text-white opacity-[0.5]">
+                  <h1 className="font-bold">Contact Us (Central Office)</h1>
+                  <h1>P : +1 253-863-8967</h1>
+                  <h1>M : contact@designo.co</h1>
+                </div>
+              </div>
+            </div>
+            <div className="w-full flex flex-row mt-[40px]"></div>
           </div>
         </div>
       </div>
