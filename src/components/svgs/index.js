@@ -5,3 +5,5 @@ export { default as IconRightArrow } from "../../../public/assets/shared/desktop
 export { default as IllustrationPassionate } from "../../../public/assets/home/desktop/illustration-passionate.svg";
 export { default as IllustrationResourceful } from "../../../public/assets/home/desktop/illustration-resourceful.svg";
 export { default as IllustrationFriendly } from "../../../public/assets/home/desktop/illustration-friendly.svg";
+export { default as BackgroundPatternDesignPagesIntroMobile } from "../../../public/assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg";
+export { default as BackgroundPatternThreeCircles } from "../../../public/assets/shared/desktop/bg-pattern-three-circles.svg";

@@ -2,11 +2,12 @@ import Navbar from "@/components/Navbar/navbar";
 import Hero from "@/components/Hero/Hero";
 import MobileCardLink from "@/components/MobileCardLink/MobileCardLink";
 import {
-  BackgroundPatternHeroHome,
   BackgroundPatternSmallCircle,
   IllustrationFriendly,
   IllustrationPassionate,
   IllustrationResourceful,
+  BackgroundPatternThreeCircles,
+  BackgroundPatternDesignPagesIntroMobile,
 } from "@/components/svgs";
 
 export default function Home() {
@@ -22,7 +23,7 @@ export default function Home() {
   return (
     <>
       <Navbar /> <Hero />
-      <div className="w-[375px] mt-[120px]">
+      <div className="w-[375px] h- mt-[120px]">
         <div className="flex flex-col gap-[24px] items-center">
           {mobileCardLinks.map((image) => (
             <MobileCardLink
@@ -74,6 +75,22 @@ export default function Home() {
                 first. Our success depends on our customers, and we strive to
                 give them the best experience a company can provide.
               </p>
+            </div>
+            <div className="mt-[119px] gap-[49px]  bg-[#E7816B] h-[379px] w-[327px] items-center justify-center rounded-[15px] flex flex-col overflow-hidden relative">
+              {/* flip image horizontaly  */}
+              <BackgroundPatternDesignPagesIntroMobile className="w-[876px] -translate-x-[260px] h-[584px]   absolute" />
+              <div className="flex flex-col text-center w-[279px] gap-[6px]">
+                <h1 className="text-[32px] font-medium leading-9 text-white">
+                  Let's talk about your project
+                </h1>
+                <p className="text-white leading-[25px] text-[15px]">
+                  Ready to take it to the next level? Contact us today and find
+                  out how our expertise can help your business grow.
+                </p>
+              </div>
+              <button className="w-[156px] h-[56px] rounded-[8px] bg-white text-[15px] font-medium tracking-[1px]">
+                GET IN TOUCH
+              </button>
             </div>
           </div>
         </div>
