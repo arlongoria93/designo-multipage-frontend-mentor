@@ -1,11 +1,9 @@
-import Navbar from "@/components/Navbar/navbar";
-
-import Hero from "@/components/Hero/Hero";
+import MobileLayout from "@/components/MobileLayout";
 
 export default function Home() {
   return (
     <>
-      <Navbar /> <Hero />
+      <MobileLayout />
     </>
   );
 }
