@@ -3,7 +3,7 @@ import Image from "next/image";
 import { IconHamburger } from "../svgs";
 const Navbar = () => {
   return (
-    <div className=" h-[96px] bg-white flex flex-row items-center justify-between pr-[24px] pl-[24px] pt-[35px] pb-[34px]">
+    <div className=" h-[96px] lg:w-[1111px] mx-auto bg-white flex flex-row items-center justify-between pr-[24px] pl-[24px] pt-[35px] pb-[34px] lg:mb-[20px] lg:mt-[20px]">
       <Image
         src="/assets/shared/desktop/logo-dark.png"
         width={202}
