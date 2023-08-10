@@ -180,7 +180,7 @@ const HomeContent = () => {
               GET IN TOUCH
             </button>
           </div>
-          <div className="mt-[253px] md:mt-[150px] md:w-[690px] flex flex-col w-full items-center gap-[32px]">
+          <div className="mt-[253px] md:mt-[150px] md:w-[690px] lg:w-[1111px] flex flex-col w-full items-center gap-[32px]">
             <div className="flex flex-col md:w-full items-center   md:justify-between gap-[32px] md:flex-row">
               <Image
                 src="/assets/shared/desktop/logo-light.png"
@@ -196,8 +196,8 @@ const HomeContent = () => {
                 <h1>CONTACT</h1>
               </div>
             </div>
-            <div className="hidden md:block w-[690px] h-[1px] bg-[#fff] opacity-10 mt-[40px]"></div>
-            <div className="flex flex-col md:flex-row md:w-[690px] md:justify-between  gap-[40px] md:gap-[10px]">
+            <div className="hidden md:block w-[690px] lg:w-[1111px] h-[1px] bg-[#fff] opacity-10 mt-[40px]"></div>
+            <div className="flex flex-col md:flex-row md:w-[690px] lg:w-[1111px] md:justify-between  gap-[40px] md:gap-[10px]">
               <div className="flex flex-col items-center md:text-[16px] leading-[26px]  text-white opacity-[0.5]">
                 <h1 className="font-bold">Designo Central Office</h1>
                 <h1>3886 Wellington Street</h1>
