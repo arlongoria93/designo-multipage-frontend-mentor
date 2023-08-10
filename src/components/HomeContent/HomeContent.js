@@ -73,30 +73,32 @@ const HomeContent = () => {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-row gap-[30px]">
-          <div className="bg-[#000] w-[541px] h-[640px] flex flex-col items-center rounded-[15px]  relative justify-center">
-            <Image
-              src={desktopCardLinks[0][1]}
-              layout="fill"
-              alt={desktopCardLinks[0][2]}
-              quality={100}
-              className="opacity-[0.49] rounded-[15px] "
-            />
-            <Link
-              className="text-white font-medium   flex flex-col z-20"
-              href="/mobile/web-design"
-            >
-              <h1 className="leading-[48px] mb-[11.97px] tracking-[2px] text-[40px]">
+          <Link
+            className="text-white font-medium   flex flex-col z-20"
+            href="/mobile/web-design"
+          >
+            {" "}
+            <div className="bg-[#000] w-[541px] h-[640px] flex flex-col items-center rounded-[15px]  relative justify-center hover:bg-[#FFAD9B]">
+              <Image
+                src={desktopCardLinks[0][1]}
+                layout="fill"
+                alt={desktopCardLinks[0][2]}
+                quality={100}
+                className="opacity-[0.49] rounded-[15px] "
+              />
+              <h1 className="leading-[48px] mb-[11.97px] tracking-[2px] text-[40px] z-20">
                 {desktopCardLinks[0][0]}
               </h1>
-              <div className="flex flex-row items-center justify-center gap-[16px] ">
+              <div className="flex flex-row items-center justify-center gap-[16px] z-20">
                 <h2 className="text-[15px] tracking-[5px] uppercase ">
                   View Projects
                 </h2>
 
                 <IconRightArrow className="w-[7px] h-[10px] " />
-              </div>
-            </Link>
-          </div>
+              </div>{" "}
+            </div>
+          </Link>
+
           <div className="flex flex-col gap-[24px] justify-between">
             <DesktopCardLink
               imageUrl={desktopCardLinks[1][1]}
@@ -176,7 +178,7 @@ const HomeContent = () => {
                 out how our expertise can help your business grow.
               </p>
             </div>
-            <button className="w-[156px] h-[56px] rounded-[8px] bg-white text-[15px] font-medium tracking-[1px]">
+            <button className="w-[156px] h-[56px] rounded-[8px] bg-white text-[15px] font-medium tracking-[1px] hover:bg-[#FFAD9B] hover:text-white">
               GET IN TOUCH
             </button>
           </div>
@@ -210,11 +212,11 @@ const HomeContent = () => {
               </div>
 
               <div className=" md:w-[223px] w-full flex flex-row justify-center items-center md:items-end gap-[24px]">
-                <IconFacebook className="w-[24px] h-[24px] " />
-                <IconYoutube className="w-[24px] h-[24px] " />
-                <IconTwitter className="w-[24px] h-[24px]" />
-                <IconPinterest className="w-[24px] h-[24px] " />
-                <IconInstagram className="w-[24px] h-[24px] " />
+                <IconFacebook className="w-[24px] h-[24px] fill-[#E7816B] hover:fill-[#FFAD9B] cursor-pointer" />
+                <IconYoutube className="w-[24px] h-[24px] fill-[#E7816B] hover:fill-[#FFAD9B] cursor-pointer" />
+                <IconTwitter className="w-[24px] h-[24px] fill-[#E7816B] hover:fill-[#FFAD9B] cursor-pointer" />
+                <IconPinterest className="w-[24px] h-[24px] fill-[#E7816B] hover:fill-[#FFAD9B] cursor-pointer" />
+                <IconInstagram className="w-[24px] h-[24px] fill-[#E7816B] hover:fill-[#FFAD9B] cursor-pointer" />
               </div>
             </div>
           </div>
