@@ -24,7 +24,7 @@ const Hero = () => {
           fully responsive websites, app design, and engaging brand experiences.
           Find out more about our services.
         </p>
-        <button className="mt-[24px] font-medium text-[15px] bg-white w-[152px] h-[56px] rounded-[8px] tracking-[1px] self-center lg:self-start   lg:mt-[26px]">
+        <button className="mt-[24px] hover:bg-[#FFAD9B] hover:text-white font-medium text-[15px] bg-white w-[152px] h-[56px] rounded-[8px] tracking-[1px] self-center lg:self-start   lg:mt-[26px]">
           LEARN MORE
         </button>
       </div>
