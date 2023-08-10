@@ -5,18 +5,19 @@ import { IconRightArrow } from "@/components/svgs";
 
 const MobileCardLink = ({ name, imageUrl, alt }) => {
   return (
-    <div className="bg-[#000] w-[327px] flex flex-col items-center rounded-[15px] h-[250px] relative justify-center">
-      <Image
-        src={imageUrl}
-        layout="fill"
-        alt={alt}
-        quality={100}
-        className="opacity-[0.49] rounded-[15px] "
-      />
-      <Link
-        className="text-white font-medium   flex flex-col z-20"
-        href="/mobile/web-design"
-      >
+    <Link
+      className="text-white font-medium   flex flex-col z-20"
+      href={`/projects/${name}`}
+    >
+      <div className="bg-[#000] w-[327px] flex flex-col items-center rounded-[15px] h-[250px] relative justify-center">
+        <Image
+          src={imageUrl}
+          layout="fill"
+          alt={alt}
+          quality={100}
+          className="opacity-[0.49] rounded-[15px] "
+        />
+
         <h1 className="leading-[36px] mb-[11.97px] tracking-[1.4px] text-[28px]">
           {name}
         </h1>
@@ -27,8 +28,8 @@ const MobileCardLink = ({ name, imageUrl, alt }) => {
 
           <IconRightArrow className="w-[7px] h-[10px] " />
         </div>
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 };
 

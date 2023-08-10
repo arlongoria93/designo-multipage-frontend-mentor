@@ -7,7 +7,7 @@ const DesktopCardLink = ({ name, imageUrl, alt }) => {
   return (
     <Link
       className="text-white font-medium   flex flex-col z-20"
-      href="/mobile/web-design"
+      href={`/projects/${name}`}
     >
       <div className="bg-[#000] hover:bg-[#E7816B] w-[689px] lg:w-[541px] flex flex-col items-center rounded-[15px] h-[250px] lg:h-[308px] relative justify-center">
         <Image

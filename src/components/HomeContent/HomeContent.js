@@ -184,18 +184,26 @@ const HomeContent = () => {
           </div>
           <div className="mt-[253px] md:mt-[150px] md:w-[690px] lg:w-[1111px] flex flex-col w-full items-center gap-[32px]">
             <div className="flex flex-col md:w-full items-center   md:justify-between gap-[32px] md:flex-row">
-              <Image
-                src="/assets/shared/desktop/logo-light.png"
-                width={202}
-                height={27}
-                alt="logo"
-              />
+              <Link href="/">
+                <Image
+                  src="/assets/shared/desktop/logo-light.png"
+                  width={202}
+                  height={27}
+                  alt="logo"
+                />
+              </Link>
               <div className="w-[327px] h-[1px] bg-[#fff] md:hidden opacity-10"></div>
 
               <div className="flex flex-col md:flex-row items-center gap-[32px] text-white leading-[14px] tracking-[2px]">
-                <h1>OUR COMPANY</h1>
-                <h1>LOCATIONS</h1>
-                <h1>CONTACT</h1>
+                <Link href="/company">
+                  <h1>OUR COMPANY</h1>
+                </Link>
+                <Link href="/locations">
+                  <h1>LOCATIONS</h1>
+                </Link>
+                <Link href="/contact">
+                  <h1>CONTACT</h1>
+                </Link>
               </div>
             </div>
             <div className="hidden md:block w-[690px] lg:w-[1111px] h-[1px] bg-[#fff] opacity-10 mt-[40px]"></div>
