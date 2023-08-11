@@ -75,7 +75,7 @@ const HomeContent = () => {
         <div className="hidden lg:flex lg:flex-row gap-[30px]">
           <Link
             className="text-white font-medium   flex flex-col z-20"
-            href="/mobile/web-design"
+            href="/web-design"
           >
             {" "}
             <div className="bg-[#000] w-[541px] h-[640px] flex flex-col items-center rounded-[15px]  relative justify-center hover:bg-[#FFAD9B]">
