@@ -15,7 +15,7 @@ const TabletCardLink = ({ name, imageUrl, alt }) => {
       />
       <Link
         className="text-white font-medium   flex flex-col z-20"
-        href="/mobile/web-design"
+        href={`/projects/${name}`}
       >
         <h1 className="leading-[48px] mb-[11.97px] tracking-[2px] text-[40px]">
           {name}

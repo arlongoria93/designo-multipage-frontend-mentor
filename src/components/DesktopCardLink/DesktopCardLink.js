@@ -3,13 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { IconRightArrow } from "@/components/svgs";
 
-const MobileCardLink = ({ name, imageUrl, alt }) => {
+const DesktopCardLink = ({ name, imageUrl, alt }) => {
   return (
     <Link
       className="text-white font-medium   flex flex-col z-20"
       href={`/projects/${name}`}
     >
-      <div className="bg-[#000] w-[327px] flex flex-col items-center rounded-[15px] h-[250px] relative justify-center">
+      <div className="bg-[#000] hover:bg-[#E7816B] w-[689px] lg:w-[541px] flex flex-col items-center rounded-[15px] h-[250px] lg:h-[308px] relative justify-center">
         <Image
           src={imageUrl}
           layout="fill"
@@ -18,10 +18,10 @@ const MobileCardLink = ({ name, imageUrl, alt }) => {
           className="opacity-[0.49] rounded-[15px] "
         />
 
-        <h1 className="leading-[36px] mb-[11.97px] tracking-[1.4px] text-[28px]">
+        <h1 className="leading-[48px] mb-[11.97px] tracking-[2px] text-[40px] z-20">
           {name}
         </h1>
-        <div className="flex flex-row items-center justify-center gap-[16px] ">
+        <div className="flex flex-row items-center justify-center gap-[16px] z-20 ">
           <h2 className="text-[15px] tracking-[5px] uppercase ">
             View Projects
           </h2>
@@ -33,4 +33,4 @@ const MobileCardLink = ({ name, imageUrl, alt }) => {
   );
 };
 
-export default MobileCardLink;
+export default DesktopCardLink;
