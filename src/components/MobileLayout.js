@@ -6,7 +6,6 @@ import HomeContent from "./HomeContent/HomeContent";
 const MobileLayout = () => {
   return (
     <>
-      <Navbar />
       <Hero />
       <HomeContent />
     </>
