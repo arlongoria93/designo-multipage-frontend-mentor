@@ -3,17 +3,14 @@ import Image from "next/image";
 
 const ImageCardWebDesign = ({ imageUrl, alt, body }) => {
   return (
-    <div className="flex mt-11 flex-col items-center justify-center bg-[#FDF3F0] h-[478px] w-[327px] rounded-[15px]">
-      <div className="relative w-[327px] h-[320px]">
+    <div className="flex mt-11 flex-col md:flex-row lg:flex-col items-center justify-center bg-[#FDF3F0]  h-[478px] md:h-[310px] lg:h-[478px] w-[327px] md:w-[689px] lg:w-[339px] rounded-[15px]">
+      <div className="relative w-[339px] h-[310px]">
         <Image
           src={imageUrl}
           quality={100}
           fill
-          style={{
-            objectFit: "cover",
-          }}
           alt={alt}
-          className="rounded-[15px] object-cover translate-y-[-15%]"
+          className="rounded-t-[15px] object-cover md:object-contain lg:object-cover md:rounded-l-2xl lg:rounded-l-none lg:rounded-t-[15px] md:rounded-r-none translate-y-[-15%] md:translate-y-0 md:translate-x-[-13.4%] lg:translate-y-[-15%] lg:translate-x-0"
         />
       </div>
       <div className="flex flex-col justify-center text-center align-center h-auto gap-4 w-[262px]">

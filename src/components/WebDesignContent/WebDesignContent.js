@@ -6,10 +6,6 @@ import DesktopCardLink from "../DesktopCardLink/DesktopCardLink";
 import Link from "next/link";
 import { IconRightArrow } from "@/components/svgs";
 import {
-  BackgroundPatternSmallCircle,
-  IllustrationFriendly,
-  IllustrationPassionate,
-  IllustrationResourceful,
   BackgroundPatternDesignPagesIntroMobile,
   IconFacebook,
   IconInstagram,
@@ -19,7 +15,6 @@ import {
 } from "@/components/svgs";
 import ImageCardWebDesign from "../ImageCardWebDesign/ImageCardWebDesign";
 const mobileCardLinks = [
-  ["WEB DESIGN", "/assets/home/mobile/image-web-design.jpg", "Web Design"],
   ["APP DESIGN", "/assets/home/mobile/image-app-design.jpg", "App Design"],
   [
     "GRAPHIC DESIGN",
@@ -28,7 +23,6 @@ const mobileCardLinks = [
   ],
 ];
 const tabletCardLinks = [
-  ["WEB DESIGN", "/assets/home/tablet/image-web-design.jpg", "Web Design"],
   ["APP DESIGN", "/assets/home/tablet/image-app-design.jpg", "App Design"],
   [
     "GRAPHIC DESIGN",
@@ -85,16 +79,18 @@ const WebDesignImages = [
 ];
 const WebDesignContent = () => {
   return (
-    <div className="  mt-[120px] ">
+    <div className="  mt-[120px]  mx-auto">
       <div className="flex flex-col gap-[24px] items-center ">
-        {WebDesignImages.map((image) => (
-          <ImageCardWebDesign
-            imageUrl={image[0]}
-            alt={image[1]}
-            body={image[2]}
-          />
-        ))}
-        <div className="md:hidden flex flex-col gap-[24px] items-center">
+        <div className="flex flex-col items-center justify-center lg:grid lg:grid-cols-3 gap-8">
+          {WebDesignImages.map((image) => (
+            <ImageCardWebDesign
+              imageUrl={image[0]}
+              alt={image[1]}
+              body={image[2]}
+            />
+          ))}
+        </div>
+        <div className="md:hidden flex flex-col gap-[24px] items-center mt-[96px]">
           {mobileCardLinks.map((image) => (
             <MobileCardLink
               alt={image[2]}
@@ -113,33 +109,7 @@ const WebDesignContent = () => {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-row gap-[30px]">
-          <Link
-            className="text-white font-medium   flex flex-col z-20"
-            href="/web-design"
-          >
-            {" "}
-            <div className="bg-[#000] w-[541px] h-[640px] flex flex-col items-center rounded-[15px]  relative justify-center hover:bg-[#FFAD9B]">
-              <Image
-                src={desktopCardLinks[0][1]}
-                layout="fill"
-                alt={desktopCardLinks[0][2]}
-                quality={100}
-                className="opacity-[0.49] rounded-[15px] "
-              />
-              <h1 className="leading-[48px] mb-[11.97px] tracking-[2px] text-[40px] z-20">
-                {desktopCardLinks[0][0]}
-              </h1>
-              <div className="flex flex-row items-center justify-center gap-[16px] z-20">
-                <h2 className="text-[15px] tracking-[5px] uppercase ">
-                  View Projects
-                </h2>
-
-                <IconRightArrow className="w-[7px] h-[10px] " />
-              </div>{" "}
-            </div>
-          </Link>
-
-          <div className="flex flex-col gap-[24px] justify-between">
+          <div className="flex flex-row gap-[24px] justify-between">
             <DesktopCardLink
               imageUrl={desktopCardLinks[1][1]}
               alt={desktopCardLinks[1][2]}
