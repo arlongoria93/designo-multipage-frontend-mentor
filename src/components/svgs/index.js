@@ -14,3 +14,6 @@ export { default as IconInstagram } from "../../../public/assets/shared/desktop/
 export { default as IconTwitter } from "../../../public/assets/shared/desktop/icon-twitter.svg";
 export { default as IconPinterest } from "../../../public/assets/shared/desktop/icon-pinterest.svg";
 export { default as IconYoutube } from "../../../public/assets/shared/desktop/icon-youtube.svg";
+
+// Web Design
+export { default as BackgroundPatternIntroWeb } from "../../../public/assets/web-design/desktop/bg-pattern-intro-web.svg";

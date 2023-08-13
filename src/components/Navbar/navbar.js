@@ -4,7 +4,7 @@ import { IconHamburger } from "../svgs";
 import Link from "next/link";
 const Navbar = () => {
   return (
-    <div className=" h-[96px] lg:w-[1111px] mx-auto bg-white flex flex-row items-center justify-between pr-[24px] pl-[24px] pt-[35px] pb-[34px] lg:mb-[20px] lg:mt-[20px]">
+    <div className="md:w-[689px] lg:w-[1111px] mx-auto bg-white flex flex-row items-center justify-between py-[34px] px-[24px]  md:py-[64px] md:px-[0px]">
       <Link href="/">
         <Image
           src="/assets/shared/desktop/logo-dark.png"

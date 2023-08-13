@@ -6,10 +6,6 @@ import DesktopCardLink from "../DesktopCardLink/DesktopCardLink";
 import Link from "next/link";
 import { IconRightArrow } from "@/components/svgs";
 import {
-  BackgroundPatternSmallCircle,
-  IllustrationFriendly,
-  IllustrationPassionate,
-  IllustrationResourceful,
   BackgroundPatternDesignPagesIntroMobile,
   IconFacebook,
   IconInstagram,
@@ -17,8 +13,8 @@ import {
   IconPinterest,
   IconYoutube,
 } from "@/components/svgs";
+import ImageCardWebDesign from "../ImageCardWebDesign/ImageCardWebDesign";
 const mobileCardLinks = [
-  ["WEB DESIGN", "/assets/home/mobile/image-web-design.jpg", "Web Design"],
   ["APP DESIGN", "/assets/home/mobile/image-app-design.jpg", "App Design"],
   [
     "GRAPHIC DESIGN",
@@ -27,7 +23,6 @@ const mobileCardLinks = [
   ],
 ];
 const tabletCardLinks = [
-  ["WEB DESIGN", "/assets/home/tablet/image-web-design.jpg", "Web Design"],
   ["APP DESIGN", "/assets/home/tablet/image-app-design.jpg", "App Design"],
   [
     "GRAPHIC DESIGN",
@@ -50,11 +45,52 @@ const desktopCardLinks = [
   ],
 ];
 
-const HomeContent = () => {
+const WebDesignImages = [
+  [
+    "/assets/web-design/desktop/image-express.jpg",
+    "Express",
+    "A multi-carrier shipping website for ecommerce businesses",
+  ],
+  [
+    "/assets/web-design/desktop/image-transfer.jpg",
+    "Transfer",
+    "Site for low-cost money transfers and sending money within seconds",
+  ],
+  [
+    "/assets/web-design/desktop/image-photon.jpg",
+    "Photon",
+    "A state-of-the-art music player with high-resolution audio and DSP effects",
+  ],
+  [
+    "/assets/web-design/desktop/image-builder.jpg",
+    "Builder",
+    "Connects users with local contractors based on their location",
+  ],
+  [
+    "/assets/web-design/desktop/image-blogr.jpg",
+    "Blogr",
+    "Blogr is a platform for creating an online blog or publication",
+  ],
+  [
+    "/assets/web-design/desktop/image-camp.jpg",
+    "Camp",
+    "Get expert training in coding, data, design, and digital marketing",
+  ],
+];
+const WebDesignContent = () => {
   return (
-    <div className="  mt-[120px] ">
-      <div className="flex flex-col gap-[24px] items-center">
-        <div className="md:hidden flex flex-col gap-[24px] items-center">
+    <div className="  mt-[120px]  mx-auto">
+      <div className="flex flex-col gap-[24px] items-center ">
+        <div className="flex flex-col items-center justify-center lg:grid lg:grid-cols-3 gap-8">
+          {WebDesignImages.map((image) => (
+            <ImageCardWebDesign
+              imageUrl={image[0]}
+              alt={image[1]}
+              body={image[2]}
+            />
+          ))}
+        </div>
+        <div className="md:hidden flex flex-col gap-[24px] items-center mt-[96px]">
           {mobileCardLinks.map((image) => (
             <MobileCardLink
               alt={image[2]}
@@ -73,33 +109,7 @@ const HomeContent = () => {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-row gap-[30px]">
-          <Link
-            className="text-white font-medium   flex flex-col z-20"
-            href="/web-design"
-          >
-            {" "}
-            <div className="bg-[#000] w-[541px] h-[640px] flex flex-col items-center rounded-[15px]  relative justify-center hover:bg-[#FFAD9B]">
-              <Image
-                src={desktopCardLinks[0][1]}
-                layout="fill"
-                alt={desktopCardLinks[0][2]}
-                quality={100}
-                className="opacity-[0.49] rounded-[15px] "
-              />
-              <h1 className="leading-[48px] mb-[11.97px] tracking-[2px] text-[40px] z-20">
-                {desktopCardLinks[0][0]}
-              </h1>
-              <div className="flex flex-row items-center justify-center gap-[16px] z-20">
-                <h2 className="text-[15px] tracking-[5px] uppercase ">
-                  View Projects
-                </h2>
-
-                <IconRightArrow className="w-[7px] h-[10px] " />
-              </div>{" "}
-            </div>
-          </Link>
-
-          <div className="flex flex-col gap-[24px] justify-between">
+          <div className="flex flex-row gap-[24px] justify-between">
             <DesktopCardLink
               imageUrl={desktopCardLinks[1][1]}
               alt={desktopCardLinks[1][2]}
@@ -113,58 +123,6 @@ const HomeContent = () => {
           </div>
         </div>
 
-        {/* PASSIONATE _ RESOURCEFUL _ FRIENDLY BLOCKS */}
-        <div className="flex flex-col lg:flex-row lg:w-[1111px] mt-[96px] lg:mt-[160px] items-center justify-center gap-[80px] lg:gap-[30px] overflow-hidden">
-          <div className="flex flex-col  md:flex-row lg:flex-col  justify-center  items-center md:gap-[48px] lg:gap-[32px]">
-            <div className="relative w-[202px] h-[202px]">
-              <BackgroundPatternSmallCircle className="-z-10 w-[202px] h-[202px]  absolute object-center" />
-              <IllustrationPassionate className="w-full h-full z-10" />
-            </div>
-            <div className="flex flex-col items-center md:items-start md:text-start w-[327px] md:w-[439px] lg:w-[350px] lg:items-center lg:text-center">
-              <h1 className="text-[20px] font-medium leading-[26px] tracking-[5px] text-[#333136] mb-[32px]">
-                PASSIONATE
-              </h1>
-              <p className="text-[16px] leading-[26px] text-center md:text-start lg:items-center lg:text-center">
-                Each project starts with an in-depth brand research to ensure we
-                only create products that serve a purpose. We merge art, design,
-                and technology into exciting new solutions.
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-col md:flex-row lg:flex-col  justify-center  items-center md:gap-[48px] lg:gap-[32px]">
-            <div className="relative w-[202px] h-[202px]">
-              <BackgroundPatternSmallCircle className="-z-10 w-[202px] h-[202px]  absolute object-center" />
-              <IllustrationResourceful className="w-full h-full z-10" />
-            </div>
-            <div className="flex flex-col items-center md:items-start md:text-start w-[327px] md:w-[439px] lg:w-[350px] lg:items-center lg:text-center">
-              <h1 className="text-[20px] font-medium leading-[26px] tracking-[5px] text-[#333136] mb-[32px] ">
-                RESOURCEFUL
-              </h1>
-              <p className="text-[16px] leading-[26px] text-center md:text-start lg:items-center lg:text-center">
-                Everything that we do has a strategic purpose. We use an agile
-                approach in all of our projects and value customer
-                collaboration. It guarantees superior results that fulfill our
-                clients’ needs.
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-col md:flex-row lg:flex-col justify-center  items-center md:gap-[48px] lg:gap-[32px]">
-            <div className="relative w-[202px] h-[202px]">
-              <BackgroundPatternSmallCircle className="-z-10 w-[202px] h-[202px]  absolute object-center" />
-              <IllustrationFriendly className="w-full h-full z-10" />
-            </div>
-            <div className="flex flex-col items-center md:items-start md:text-start lg:items-center lg:text-center w-[327px] md:w-[439px] lg:w-[350px]">
-              <h1 className="text-[20px] font-medium leading-[26px] tracking-[5px] text-[#333136] mb-[32px] lg:h-[26px]">
-                FRIENDLY
-              </h1>
-              <p className="text-[16px] leading-[26px] text-center md:text-start lg:items-center lg:text-center lg:h-[104px] lg:w-[304px]">
-                We are a group of enthusiastic folks who know how to put people
-                first. Our success depends on our customers, and we strive to
-                give them the best experience a company can provide.
-              </p>
-            </div>
-          </div>
-        </div>
         {/* Fooooooot3r */}
         <div className=" mt-[311px] flex flex-col items-center w-full bg-[#1D1C1E] h-[815px] md:h-[423px]">
           <div className="mt-[-189px] md:mt-[-280px] gap-[49px]  bg-[#E7816B] h-[379px] md:h-[350px] w-[327px] md:w-[690px] lg:w-[1111px] items-center justify-center rounded-[15px] flex flex-col lg:flex-row lg:justify-around overflow-hidden absolute">
@@ -234,4 +192,4 @@ const HomeContent = () => {
   );
 };
 
-export default HomeContent;
+export default WebDesignContent;
