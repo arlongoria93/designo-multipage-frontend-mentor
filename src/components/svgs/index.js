@@ -17,3 +17,7 @@ export { default as IconYoutube } from "../../../public/assets/shared/desktop/ic
 
 // Web Design
 export { default as BackgroundPatternIntroWeb } from "../../../public/assets/web-design/desktop/bg-pattern-intro-web.svg";
+
+//About Us
+export { default as BackgroundPatternIntroAbout } from "../../../public/assets/about/mobile/bg-pattern-hero-about-mobile.svg";
+export { default as BackgroundPatternIntroAboutDesktop } from "../../../public/assets/about/desktop/bg-pattern-hero-about-desktop.svg";

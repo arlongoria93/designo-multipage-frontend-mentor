@@ -15,7 +15,7 @@ const Navbar = () => {
         />
       </Link>
       <div className="flex flex-row items-center gap-[42px]">
-        <Link href="/company">
+        <Link href="/about">
           <h1 className="hidden md:block text-[14px] leading-[14px] tracking-[2px] hover:cursor-pointer hover:underline">
             OUR COMPANY
           </h1>
