@@ -18,10 +18,10 @@ const MobileCardLink = ({ name, imageUrl, alt }) => {
           className="opacity-[0.49] rounded-[15px] "
         />
 
-        <h1 className="leading-[36px] mb-[11.97px] tracking-[1.4px] text-[28px]">
+        <h1 className="leading-[36px] mb-[11.97px] tracking-[1.4px] text-[28px] z-30">
           {name}
         </h1>
-        <div className="flex flex-row items-center justify-center gap-[16px] ">
+        <div className="flex flex-row items-center justify-center gap-[16px] z-30">
           <h2 className="text-[15px] tracking-[5px] uppercase ">
             View Projects
           </h2>

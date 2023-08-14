@@ -15,10 +15,10 @@ const DesktopCardLink = ({ name, imageUrl, alt }) => {
           layout="fill"
           alt={alt}
           quality={100}
-          className="opacity-[0.49] rounded-[15px] "
+          className="opacity-[0.49] rounded-[15px]  "
         />
 
-        <h1 className="leading-[48px] mb-[11.97px] tracking-[2px] text-[40px] z-20">
+        <h1 className="leading-[48px] mb-[11.97px] tracking-[2px] text-[40px] z-30">
           {name}
         </h1>
         <div className="flex flex-row items-center justify-center gap-[16px] z-20 ">
