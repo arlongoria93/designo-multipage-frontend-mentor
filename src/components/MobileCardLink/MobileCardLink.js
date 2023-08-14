@@ -7,7 +7,7 @@ const MobileCardLink = ({ name, imageUrl, alt }) => {
   return (
     <Link
       className="text-white font-medium   flex flex-col z-20"
-      href={`/${name.toLowerCase()}`}
+      href={`/${name.trim().toLowerCase().replace(" ", "-")}`}
     >
       <div className="bg-[#000] w-[327px] flex flex-col items-center rounded-[15px] h-[250px] relative justify-center">
         <Image
