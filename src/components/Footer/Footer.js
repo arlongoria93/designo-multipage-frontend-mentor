@@ -12,7 +12,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className=" mt-[311px] flex flex-col items-center w-full bg-[#1D1C1E] h-[815px] md:h-[423px]">
+    <div className=" mt-[311px] md:mt-[411px] flex flex-col items-center w-full bg-[#1D1C1E] h-[815px] md:h-[423px]">
       <div className="mt-[-189px] md:mt-[-280px] gap-[49px]  bg-[#E7816B] h-[379px] md:h-[350px] w-[327px] md:w-[690px] lg:w-[1111px] items-center justify-center rounded-[15px] flex flex-col lg:flex-row lg:justify-around overflow-hidden absolute">
         <BackgroundPatternDesignPagesIntroMobile className="w-[876px] -translate-x-[260px] h-[584px]   absolute z-0" />
         <div className="flex flex-col text-center lg:text-start items-center lg:items-start justify-center  gap-[6px] z-20">
