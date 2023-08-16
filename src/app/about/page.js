@@ -102,7 +102,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col gap-[48px] items-center">
+      <div className="flex flex-col gap-[48px] items-center lg:flex-row justify-center text-center mt-[120px] lg:w-[1110px] lg:gap-[30px] mx-auto">
         <AboutLocationCard location="Canada" />
         <AboutLocationCard location="Australia" />
         <AboutLocationCard location="United Kingdom" />

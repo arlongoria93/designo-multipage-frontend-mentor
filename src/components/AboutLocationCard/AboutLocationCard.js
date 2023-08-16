@@ -10,7 +10,7 @@ const AboutLocationCard = ({ location }) => {
   if (!location) return null;
   if (location === "Canada")
     return (
-      <div className="mt-[120px] flex flex-col  lg:flex-col  justify-center  items-center gap-[48px] lg:gap-[32px]">
+      <div className=" flex flex-col  lg:flex-col  justify-center  items-center gap-[48px] lg:gap-[32px]">
         <div className="relative w-[202px] h-[202px] ">
           <BackgroundPatternSmallCircle className="-z-10 w-[202px] h-[202px]  absolute object-center" />
           <CanadaImage className="w-full h-full z-10" />
