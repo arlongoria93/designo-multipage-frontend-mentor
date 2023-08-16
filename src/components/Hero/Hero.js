@@ -13,7 +13,7 @@ const Hero = () => {
       className={`${jost.className} md:w-[689px] lg:w-[1111px] mx-auto border border-solid-2px  md:rounded-[15px]  h-[843px] lg:h-[640px] bg-[#E7816B] flex flex-col lg:flex-row z-10 overflow-clip`}
     >
       <div className="relative">
-        <BackgroundPatternHeroHome className="self-center translate-y-[110px] md:translate-y-[19%] lg:translate-y-[-0.5%] translate-x-[-2%] md:translate-x-[26%] lg:translate-x-[75%]  h-[640px] w-[640px]  absolute overflow-hidden " />
+        <BackgroundPatternHeroHome className="self-center  md:translate-y-[19%] lg:translate-y-[-0.5%] translate-x-[-2%]  lg:translate-x-[75%]  h-[640px] w-[640px]  absolute overflow-hidden " />
       </div>
       <div className="flex flex-col  gap-[14px] mt-[80px] w-[327px] md:w-[573px] lg:w-[540px] lg:h-[350px] self-center z-20 md:items-center lg:items-start lg:justify-start lg:gap-[11px] lg:ml-[95px]">
         <h1 className="text-white text-center lg:text-start font-medium text-[32px] md:text-[48px] lg:w-[540px] leading-[36px] md:leading-[48px]">
