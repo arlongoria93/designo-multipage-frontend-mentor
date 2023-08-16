@@ -21,3 +21,6 @@ export { default as BackgroundPatternIntroWeb } from "../../../public/assets/web
 //About Us
 export { default as BackgroundPatternIntroAbout } from "../../../public/assets/about/mobile/bg-pattern-hero-about-mobile.svg";
 export { default as BackgroundPatternIntroAboutDesktop } from "../../../public/assets/about/desktop/bg-pattern-hero-about-desktop.svg";
+export { default as CanadaImage } from "../../../public/assets/shared/desktop/illustration-canada.svg";
+export { default as AustraliaImage } from "../../../public/assets/shared/desktop/illustration-australia.svg";
+export { default as UnitedKingdomImage } from "../../../public/assets/shared/desktop/illustration-united-kingdom.svg";

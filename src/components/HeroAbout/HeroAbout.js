@@ -9,7 +9,7 @@ const jost = Jost({
 });
 const HeroAbout = () => {
   return (
-    <div className="hidden lg:flex flex-row-reverse h-[480px] w-[1111px] items-center justify-center mx-auto">
+    <div className="hidden lg:flex flex-row-reverse h-[480px] lg:w-[1111px] items-center justify-center mx-auto">
       <div className="relative w-[480px] h-[480px]">
         <Image
           src="/assets/about/desktop/image-about-hero.jpg"
