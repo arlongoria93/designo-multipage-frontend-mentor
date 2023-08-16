@@ -19,7 +19,7 @@ const AboutLocationCard = ({ location }) => {
           <h1 className="text-[20px] font-medium leading-[26px] tracking-[5px] text-[#333136] mb-[32px]">
             CANADA
           </h1>
-          <button className="text-[16px] leading-[26px] text-center rounded-[8px] w-[152px] h-[56px] bg-[#E7816B] text-white">
+          <button className="text-[16px] hover:bg-[#FFAD9B] hover:text-white leading-[26px] text-center rounded-[8px] w-[152px] h-[56px] bg-[#E7816B] text-white">
             SEE LOCATION
           </button>
         </div>
@@ -37,7 +37,7 @@ const AboutLocationCard = ({ location }) => {
           <h1 className="text-[20px] font-medium leading-[26px] tracking-[5px] text-[#333136] mb-[32px]">
             AUSTRALIA
           </h1>
-          <button className="text-[16px] leading-[26px] text-center rounded-[8px] w-[152px] h-[56px] bg-[#E7816B] text-white">
+          <button className="text-[16px] hover:bg-[#FFAD9B] hover:text-white leading-[26px] text-center rounded-[8px] w-[152px] h-[56px] bg-[#E7816B] text-white">
             SEE LOCATION
           </button>
         </div>
@@ -55,7 +55,7 @@ const AboutLocationCard = ({ location }) => {
           <h1 className="text-[20px] font-medium leading-[26px] tracking-[5px] text-[#333136] mb-[32px]">
             UNITED KINGDOM
           </h1>
-          <button className="text-[16px] leading-[26px] text-center rounded-[8px] w-[152px] h-[56px] bg-[#E7816B] text-white">
+          <button className="text-[16px] hover:bg-[#FFAD9B] hover:text-white leading-[26px] text-center rounded-[8px] w-[152px] h-[56px] bg-[#E7816B] text-white">
             SEE LOCATION
           </button>
         </div>

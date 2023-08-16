@@ -107,7 +107,7 @@ const About = () => {
         <AboutLocationCard location="Australia" />
         <AboutLocationCard location="United Kingdom" />
       </div>
-      <div className="flex flex-col  bg-gradient-to-t  from-[#FDF3F0] to-[#5D020200]  items-center  justify-center  mx-auto md:rounded-b-[15px] w-full md:w-[689px] lg:w-[1111px] md:rounded-t-[15px] mt-[120px]">
+      <div className="flex flex-col lg:flex-row-reverse  bg-gradient-to-t  from-[#FDF3F0] to-[#5D020200]  items-center  justify-center  mx-auto md:rounded-b-[15px] w-full md:w-[689px] md:rounded-t-[15px] md:mt-[120px] lg:w-[1111px] overflow-hidden lg:mt-[160px]">
         <Image
           src="/assets/about/mobile/image-real-deal.jpg"
           alt="about hero"
@@ -124,18 +124,26 @@ const About = () => {
           quality={100}
           className="  self-center object-contain w-full p-0 hidden md:block lg:hidden rounded-t-[15px]"
         />
-        <div className="flex flex-col w-[327px] gap-[24px] text-center items-center justify-center py-[80px] ">
-          <h1 className="text-[32px] leading-[36px] font-medium text-center text-[#E7816B] w-full">
+        <Image
+          src="/assets/about/desktop/image-real-deal.jpg"
+          alt="about hero"
+          width={476}
+          height={640}
+          quality={100}
+          className="object-contain  p-0 hidden lg:block "
+        />
+        <div className="flex flex-col w-[327px] gap-[24px] lg:w-3/4 text-center items-center justify-center py-[80px] ">
+          <h1 className="text-[32px] leading-[36px] font-medium text-center text-[#E7816B] w-full lg:w-[445px] lg:text-start">
             The real deal
           </h1>
-          <p className="w-[327px] text-[15px] leading-6 text-center">
+          <p className="w-full text-[15px] leading-6  text-center lg:w-[445px] lg:text-start">
             As strategic partners in our clients businesses, we are ready to
             take on any challenge as our own. Solving real problems require
             empathy and collaboration, and we strive to bring a fresh
             perspective to every opportunity. We make design and technology more
             accessible and give you tools to measure success.
           </p>
-          <p className="w-full text-[15px] leading-6  text-center">
+          <p className="w-full text-[15px] leading-6  text-center lg:w-[445px] lg:text-start">
             We are visual storytellers in appealing and captivating ways. By
             combining business and marketing strategies, we inspire audiences to
             take action and drive real results.
