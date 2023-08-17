@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer/Footer";
 import LocationComponent from "@/components/LocationComponent/LocationComponent";
 const locations = [
   {
@@ -31,21 +32,24 @@ const locations = [
 ];
 const Locations = () => {
   return (
-    <div className="mx-auto flex w-full flex-col gap-[26px] lg:w-[1111px]">
-      {locations.map((location) => (
-        <LocationComponent
-          name={location.name}
-          loc={location.loc}
-          contact={location.contact}
-          email={location.email}
-          locTag={location.locTag}
-          address1={location.address1}
-          address2={location.address2}
-          reverse={location.reverse}
-          key={location.name}
-        />
-      ))}
-    </div>
+    <>
+      <div className="mx-auto flex w-full flex-col  gap-[26px] lg:w-[1111px]">
+        {locations.map((location) => (
+          <LocationComponent
+            name={location.name}
+            loc={location.loc}
+            contact={location.contact}
+            email={location.email}
+            locTag={location.locTag}
+            address1={location.address1}
+            address2={location.address2}
+            reverse={location.reverse}
+            key={location.name}
+          />
+        ))}
+      </div>
+      <Footer />
+    </>
   );
 };
 
