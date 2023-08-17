@@ -19,7 +19,7 @@ const LocationComponent = ({
     return (
       <div className="mx-auto flex w-full flex-col items-center lg:flex-row-reverse  lg:gap-[30px]">
         <LocationGPS loc={loc} />
-        <div className="mx-auto flex h-[320px] w-full   flex-col  items-center justify-center overflow-hidden bg-[#fdf3f0]  bg-[linear-gradient(#fdf3f0,_#fdf3f0)]  from-[#FDF3F0]  to-[#5D020200] md:rounded-b-[15px] md:rounded-t-[15px]  lg:w-[730px]  lg:flex-row ">
+        <div className="mx-auto flex h-[320px] w-full   flex-col  items-center justify-center overflow-hidden bg-[#fdf3f0]  bg-[linear-gradient(#fdf3f0,_#fdf3f0)]  from-[#FDF3F0]  to-[#5D020200] md:rounded-t-[15px] lg:w-[730px]  lg:flex-row  lg:rounded-b-[15px] ">
           <div className="flex w-[327px] flex-col items-center justify-center gap-[24px] text-center  md:w-[540px]  ">
             <h1 className="w-full text-center text-[32px] font-medium leading-[36px] text-[#E7816B] md:text-start">
               {name}
@@ -60,7 +60,7 @@ const LocationComponent = ({
     return (
       <div className="mx-auto flex w-full flex-col items-center lg:flex-row  lg:gap-[30px]">
         <LocationGPS loc={loc} />
-        <div className="mx-auto flex h-[320px] w-full   flex-col  items-center justify-center overflow-hidden bg-[#fdf3f0]  bg-[linear-gradient(#fdf3f0,_#fdf3f0)]  from-[#FDF3F0]  to-[#5D020200] md:rounded-b-[15px] md:rounded-t-[15px]  lg:w-[730px]  lg:flex-row ">
+        <div className="mx-auto flex h-[320px] w-full   flex-col  items-center justify-center overflow-hidden bg-[#fdf3f0]  bg-[linear-gradient(#fdf3f0,_#fdf3f0)]  from-[#FDF3F0]  to-[#5D020200] lg:w-[730px] lg:flex-row  lg:rounded-b-[15px]  lg:rounded-t-[15px] ">
           <div className="flex w-[327px] flex-col items-center justify-center gap-[24px] text-center  md:w-[540px]  ">
             <h1 className="w-full text-center text-[32px] font-medium leading-[36px] text-[#E7816B] md:text-start">
               {name}
