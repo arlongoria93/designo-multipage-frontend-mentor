@@ -69,27 +69,29 @@ const WebDesignImages = [
 ];
 const WebDesignContent = () => {
   return (
-    <div className="  mt-[120px]  mx-auto">
-      <div className="flex flex-col gap-[24px] items-center ">
-        <div className="flex flex-col items-center justify-center lg:grid lg:grid-cols-3 gap-8">
+    <div className="  mx-auto  mt-[120px]">
+      <div className="flex flex-col items-center gap-[24px] ">
+        <div className="flex flex-col items-center justify-center gap-8 lg:grid lg:grid-cols-3">
           {WebDesignImages.map((image) => (
             <ImageCardWebDesign
               imageUrl={image[0]}
               alt={image[1]}
               body={image[2]}
+              key={image[1]}
             />
           ))}
         </div>
-        <div className="md:hidden flex flex-col gap-[24px] items-center mt-[96px]">
+        <div className="mt-[96px] flex flex-col items-center gap-[24px] md:hidden">
           {mobileCardLinks.map((image) => (
             <MobileCardLink
               alt={image[2]}
               name={image[0]}
               imageUrl={image[1]}
+              key={image[1]}
             />
           ))}
         </div>
-        <div className="hidden lg:hidden md:flex flex-col gap-[24px] items-center">
+        <div className="hidden flex-col items-center gap-[24px] md:flex lg:hidden">
           {tabletCardLinks.map((image) => (
             <TabletCardLink
               alt={image[2]}
@@ -98,8 +100,8 @@ const WebDesignContent = () => {
             />
           ))}
         </div>
-        <div className="hidden lg:flex lg:flex-row gap-[30px]">
-          <div className="flex flex-row gap-[24px] justify-between">
+        <div className="hidden gap-[30px] lg:flex lg:flex-row">
+          <div className="flex flex-row justify-between gap-[24px]">
             <DesktopCardLink
               imageUrl={desktopCardLinks[1][1]}
               alt={desktopCardLinks[1][2]}
