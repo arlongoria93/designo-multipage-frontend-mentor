@@ -56,9 +56,9 @@ const Contact = () => {
       <div className="flex flex-col items-center justify-center">
         <form
           onSubmit={submitHandler}
-          className=" flex h-[764px] w-full flex-col items-center bg-[#E7816B]  md:h-[711px] md:w-[689px] md:rounded-2xl lg:h-[711px] lg:w-[1110px] lg:flex-row lg:items-center lg:justify-center lg:gap-[30px]"
+          className=" flex h-[764px] w-full flex-col items-center bg-[#E7816B]  md:h-[711px] md:w-[689px] md:rounded-2xl  lg:h-[480px] lg:w-[1111px] "
         >
-          <div className="flex w-[327px] flex-col justify-center gap-[48px] md:w-[573px]">
+          <div className="flex w-[327px] flex-col justify-center gap-[48px] md:w-[573px] lg:h-full  lg:w-full lg:flex-row lg:items-center lg:justify-between lg:px-[95px]">
             <div className="mt-[72px] flex w-full flex-col items-center justify-center gap-[24px] md:items-start">
               <h1 className="text-center text-[32px] text-white md:text-start">
                 Contact Us
@@ -70,7 +70,7 @@ const Contact = () => {
                 relatable to your users, drop us a line.
               </p>
             </div>
-            <div className="justi flex w-full flex-col">
+            <div className=" flex w-full flex-col lg:h-full lg:justify-center">
               <input
                 type="text"
                 placeholder="Name"
