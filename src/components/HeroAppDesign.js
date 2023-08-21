@@ -1,10 +1,6 @@
 import React from "react";
-import Image from "next/image";
 import { Jost } from "next/font/google";
-import {
-  BackgroundPatternHeroHome,
-  BackgroundPatternIntroWeb,
-} from "@/components/svgs";
+import { BackgroundPatternIntroWeb } from "@/components/svgs";
 
 const jost = Jost({
   subsets: ["latin"],
@@ -13,16 +9,16 @@ const jost = Jost({
 const HeroAppDesign = () => {
   return (
     <main
-      className={`${jost.className} md:w-[689px] lg:w-[1111px] mx-auto   md:rounded-[15px] h-[320px] md:h-[252px]  bg-[#E7816B] flex flex-col lg:flex-row z-10 overflow-clip items-center`}
+      className={`${jost.className} z-10 mx-auto flex   h-[320px] flex-col items-center  overflow-clip bg-[#E7816B] md:h-[252px] md:w-[689px] md:rounded-[15px] lg:w-[1111px] lg:flex-row`}
     >
       <div className="relative">
-        <BackgroundPatternIntroWeb className=" translate-x-[-78.5%] md:translate-x-[-43%] lg:translate-x-[26.5%] md:translate-y-[-29%] lg:translate-y-[-50%]  object-contain  h-[584px] w-[876px]  absolute overflow-hidden " />
+        <BackgroundPatternIntroWeb className=" absolute h-[584px] w-[876px] translate-x-[-78.5%] overflow-hidden  object-contain  md:translate-x-[-43%] md:translate-y-[-29%]  lg:translate-x-[26.5%] lg:translate-y-[-50%] " />
       </div>
-      <div className="flex flex-col  gap-[24px] mt-[105px] w-[327px] h-[110px] md:w-[573px] lg:w-full lg:justify-center lg:h-[350px]  z-20 md:items-center md:mt-[64px] lg:mt-0 ">
-        <h1 className="text-white text-center font-medium  text-[32px] md:text-[48px] lg:w-full leading-[36px] md:leading-[48px]">
+      <div className="z-20 mt-[105px]  flex h-[110px] w-[327px] flex-col gap-[24px] md:mt-[64px] md:w-[573px] md:items-center  lg:mt-0 lg:h-[350px] lg:w-full lg:justify-center ">
+        <h1 className="text-center text-[32px] font-medium  leading-[36px] text-white md:text-[48px] md:leading-[48px] lg:w-full">
           App Design
         </h1>
-        <p className="text-center  text-[15px] leading-[25px] md:leading-[26px] text-white md:w-[445px] w-[327px]">
+        <p className="w-[327px]  text-center text-[15px] leading-[25px] text-white md:w-[445px] md:leading-[26px]">
           Our mobile designs bring intuitive digital solutions to your customers
           right at their fingertips.
         </p>
