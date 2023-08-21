@@ -3,17 +3,17 @@ import Image from "next/image";
 
 const ImageCardWebDesign = ({ imageUrl, alt, body }) => {
   return (
-    <div className="flex mt-11 flex-col md:flex-row lg:flex-col items-center justify-center bg-[#FDF3F0]  h-[478px] md:h-[310px] lg:h-[478px] w-[327px] md:w-[689px] lg:w-[339px] rounded-[15px]">
-      <div className="relative w-[339px] h-[310px]">
+    <div className="mt-11 flex h-[478px] w-[327px] flex-col items-center justify-center rounded-[15px]  bg-[#FDF3F0] md:h-[310px] md:w-[689px] md:flex-row lg:h-[478px] lg:w-[339px] lg:flex-col">
+      <div className="relative h-[310px] w-[339px]">
         <Image
           src={imageUrl}
           quality={100}
           fill
           alt={alt}
-          className="rounded-t-[15px] object-cover md:object-contain lg:object-cover md:rounded-l-2xl lg:rounded-l-none lg:rounded-t-[15px] md:rounded-r-none translate-y-[-15%] md:translate-y-0 md:translate-x-[-13.4%] lg:translate-y-[-15%] lg:translate-x-0"
+          className="translate-y-[-15%] rounded-t-[15px] object-cover md:translate-x-[-13.4%] md:translate-y-0 md:rounded-l-2xl md:rounded-r-none md:object-contain lg:translate-x-0 lg:translate-y-[-15%] lg:rounded-l-none lg:rounded-t-[15px] lg:object-cover"
         />
       </div>
-      <div className="flex flex-col justify-center text-center align-center h-auto gap-4 w-[262px]">
+      <div className="align-center flex h-auto w-[262px] flex-col justify-center gap-4 text-center">
         <h1 className="text-[20px] font-medium leading-[26px] tracking-[5px] text-[#E7816B]">
           {alt.toUpperCase()}
         </h1>
@@ -24,39 +24,3 @@ const ImageCardWebDesign = ({ imageUrl, alt, body }) => {
 };
 
 export default ImageCardWebDesign;
-//  <Image
-//         src="/assets/web-design/desktop/image-express.jpg"
-//         width={1110}
-//         height={450}
-//         alt="Express"
-//       />
-//       <Image
-//         src="/assets/web-design/desktop/image-transfer.jpg"
-//         width={1110}
-//         height={450}
-//         alt="Transfer"
-//       />
-//       <Image
-//         src="/assets/web-design/desktop/image-photon.jpg"
-//         width={1110}
-//         height={450}
-//         alt="Photon"
-//       />
-//       <Image
-//         src="/assets/web-design/desktop/image-builder.jpg"
-//         width={1110}
-//         height={450}
-//         alt="Builder"
-//       />
-//       <Image
-//         src="/assets/web-design/desktop/image-blogr.jpg"
-//         width={1110}
-//         height={450}
-//         alt="Blogr"
-//       />
-//       <Image
-//         src="/assets/web-design/desktop/image-camp.jpg"
-//         width={1110}
-//         height={450}
-//         alt="Camp"
-//       />
