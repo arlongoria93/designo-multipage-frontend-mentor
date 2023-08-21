@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import dynamic from "next/dynamic";
-const LocationGPS = dynamic(() => import("../LocationGPSCard/LocationGPS"), {
+const LocationGPS = dynamic(() => import("./LocationGPS"), {
   ssr: false,
 });
 

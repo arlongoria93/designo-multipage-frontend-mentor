@@ -1,6 +1,6 @@
 import React from "react";
-import GraphicDesignContent from "@/components/GraphicDesignContent/GraphicDesignContent";
-import HeroGraphicDesign from "@/components/HeroGraphicDesign/HeroGraphicDesign";
+import GraphicDesignContent from "@/components/GraphicDesignContent";
+import HeroGraphicDesign from "@/components/HeroGraphicDesign";
 
 const GraphicDesign = () => {
   return (

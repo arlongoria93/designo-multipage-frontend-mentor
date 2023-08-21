@@ -1,5 +1,5 @@
-import HeroWebDesign from "@/components/HeroWebDesign/HeroWebDesign";
-import WebDesginContent from "@/components/WebDesignContent/WebDesignContent";
+import HeroWebDesign from "@/components/HeroWebDesign";
+import WebDesginContent from "@/components/WebDesignContent";
 import React from "react";
 
 const WebDesign = () => {

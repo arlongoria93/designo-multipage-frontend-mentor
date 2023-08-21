@@ -1,9 +1,9 @@
 import React from "react";
-import MobileCardLink from "@/components/MobileCardLink/MobileCardLink";
-import TabletCardLink from "../TabletCardLink/TabletCardLink";
-import DesktopCardLink from "../DesktopCardLink/DesktopCardLink";
-import ImageCardWebDesign from "../ImageCardWebDesign/ImageCardWebDesign";
-import Footer from "../Footer/Footer";
+import MobileCardLink from "@/components/MobileCardLink";
+import TabletCardLink from "./TabletCardLink";
+import DesktopCardLink from "./DesktopCardLink";
+import ImageCardWebDesign from "./ImageCardWebDesign";
+import Footer from "./Footer";
 
 const mobileCardLinks = [
   ["WEB DESIGN", "/assets/home/mobile/image-web-design.jpg", "Web Design"],
@@ -67,9 +67,9 @@ const AppDesignImageLinks = [
 
 const AppDesignContent = () => {
   return (
-    <div className="  mt-[120px]  mx-auto">
-      <div className="flex flex-col gap-[24px] items-center ">
-        <div className="flex flex-col items-center justify-center lg:grid lg:grid-cols-3 gap-8">
+    <div className="  mx-auto  mt-[120px]">
+      <div className="flex flex-col items-center gap-[24px] ">
+        <div className="flex flex-col items-center justify-center gap-8 lg:grid lg:grid-cols-3">
           {AppDesignImageLinks.map((image) => (
             <ImageCardWebDesign
               imageUrl={image[0]}
@@ -78,7 +78,7 @@ const AppDesignContent = () => {
             />
           ))}
         </div>
-        <div className="md:hidden flex flex-col gap-[24px] items-center mt-[96px]">
+        <div className="mt-[96px] flex flex-col items-center gap-[24px] md:hidden">
           {mobileCardLinks.map((image) => (
             <MobileCardLink
               alt={image[2]}
@@ -87,7 +87,7 @@ const AppDesignContent = () => {
             />
           ))}
         </div>
-        <div className="hidden lg:hidden md:flex flex-col gap-[24px] items-center mt-[96px]">
+        <div className="mt-[96px] hidden flex-col items-center gap-[24px] md:flex lg:hidden">
           {tabletCardLinks.map((image) => (
             <TabletCardLink
               alt={image[2]}
@@ -96,8 +96,8 @@ const AppDesignContent = () => {
             />
           ))}
         </div>
-        <div className="hidden lg:flex lg:flex-row gap-[30px] mt-[96px]">
-          <div className="flex flex-row gap-[24px] justify-between">
+        <div className="mt-[96px] hidden gap-[30px] lg:flex lg:flex-row">
+          <div className="flex flex-row justify-between gap-[24px]">
             <DesktopCardLink
               imageUrl={desktopCardLinks[0][1]}
               alt={desktopCardLinks[0][2]}

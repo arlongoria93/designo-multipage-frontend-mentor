@@ -1,5 +1,5 @@
-import Footer from "@/components/Footer/Footer";
-import LocationComponent from "@/components/LocationComponent/LocationComponent";
+import Footer from "@/components/Footer";
+import LocationComponent from "@/components/LocationComponent";
 const locations = [
   {
     name: "Canada",
