@@ -33,13 +33,13 @@ const Modal = ({ show, close }) => {
     <>
       {/* Semi-transparent overlay */}
       <div
-        className="fixed bottom-0 left-0 right-0 top-[96px] z-40 bg-black opacity-50"
+        className="fixed bottom-0 left-0 right-0 top-[96px] z-40 bg-black opacity-50 md:hidden"
         onClick={close}
       ></div>
 
       {/* Modal content */}
       <div
-        className="fixed bottom-0 left-0 right-0 top-[96px] z-50 mb-[200px] flex h-[235px] w-full flex-col justify-center bg-[#1D1C1E]"
+        className="fixed bottom-0 left-0 right-0 top-[96px] z-50 mb-[200px] flex h-[235px] w-full flex-col justify-center bg-[#1D1C1E] md:hidden"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex flex-col items-start justify-center gap-[42px] px-6 py-12 text-2xl leading-6 tracking-[2px] text-white">
