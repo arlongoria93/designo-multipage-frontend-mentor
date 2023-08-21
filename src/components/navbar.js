@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { IconHamburger } from "../svgs";
+import { IconHamburger } from "./svgs";
 
 import Link from "next/link";
-import Modal from "../modal";
+import Modal from "./modal";
 
 const Navbar = () => {
   const [modal, setModal] = useState(false);
