@@ -1,10 +1,8 @@
 import React, { useEffect } from "react";
-import { useRouter } from "next/navigation";
 import ReactDOM from "react-dom";
+import Link from "next/link";
 
 const Modal = ({ show, close }) => {
-  const router = useRouter();
-
   useEffect(() => {
     const handleEscapeKey = (event) => {
       if (event.key === "Escape") {
@@ -13,10 +11,16 @@ const Modal = ({ show, close }) => {
     };
 
     if (show) {
+      document.documentElement.style.overflow = "hidden";
+      document.body.style.overflow = "hidden";
+
       document.addEventListener("keydown", handleEscapeKey);
     }
 
     return () => {
+      document.documentElement.style.overflow = "auto";
+      document.body.style.overflow = "auto";
+
       document.removeEventListener("keydown", handleEscapeKey);
     };
   }, [show, close]);
@@ -41,33 +45,40 @@ const Modal = ({ show, close }) => {
         <div className="flex flex-col items-start justify-center gap-[42px] px-6 py-12 text-2xl leading-6 tracking-[2px] text-white">
           <button
             onClick={() => {
-              router.push("/about");
               close();
             }}
           >
-            <h1 className="text-[14px] leading-[14px] tracking-[2px] hover:cursor-pointer hover:underline">
+            <Link
+              className="text-[14px] leading-[14px] tracking-[2px] hover:cursor-pointer hover:underline"
+              href="/about"
+            >
               OUR COMPANY
-            </h1>
+            </Link>
           </button>
           <button
             onClick={() => {
-              router.push("/locations");
               close();
             }}
           >
-            <h1 className="text-[14px] leading-[14px] tracking-[2px] hover:cursor-pointer hover:underline">
+            <Link
+              className="text-[14px] leading-[14px] tracking-[2px] hover:cursor-pointer hover:underline"
+              href="/locations"
+            >
               LOCATIONS
-            </h1>
+            </Link>
           </button>
           <button
             onClick={() => {
-              router.push("/contact");
               close();
             }}
           >
-            <h1 className="text-[14px] leading-[14px] tracking-[2px] hover:cursor-pointer hover:underline">
+            <Link
+              className="text-[14px] leading-[14px] tracking-[2px] hover:cursor-pointer hover:underline"
+              href="
+            /contact"
+            >
               CONTACT
-            </h1>
+            </Link>
           </button>
         </div>
       </div>

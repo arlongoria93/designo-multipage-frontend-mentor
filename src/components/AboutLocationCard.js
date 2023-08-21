@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   CanadaImage,
@@ -5,8 +6,9 @@ import {
   UnitedKingdomImage,
   BackgroundPatternSmallCircle,
 } from "./svgs";
-
+import { useRouter } from "next/navigation";
 const AboutLocationCard = ({ location }) => {
+  const router = useRouter();
   if (!location) return null;
   if (location === "Canada")
     return (
@@ -19,7 +21,10 @@ const AboutLocationCard = ({ location }) => {
           <h1 className="mb-[32px] text-[20px] font-medium leading-[26px] tracking-[5px] text-[#333136]">
             CANADA
           </h1>
-          <button className="h-[56px] w-[152px] rounded-[8px] bg-[#E7816B] text-center text-[16px] leading-[26px] text-white hover:bg-[#FFAD9B] hover:text-white">
+          <button
+            onClick={() => router.push("/locations")}
+            className="h-[56px] w-[152px] rounded-[8px] bg-[#E7816B] text-center text-[16px] leading-[26px] text-white hover:bg-[#FFAD9B] hover:text-white"
+          >
             SEE LOCATION
           </button>
         </div>
@@ -37,7 +42,10 @@ const AboutLocationCard = ({ location }) => {
           <h1 className="mb-[32px] text-[20px] font-medium leading-[26px] tracking-[5px] text-[#333136]">
             AUSTRALIA
           </h1>
-          <button className="h-[56px] w-[152px] rounded-[8px] bg-[#E7816B] text-center text-[16px] leading-[26px] text-white hover:bg-[#FFAD9B] hover:text-white">
+          <button
+            onClick={() => router.push("/locations")}
+            className="h-[56px] w-[152px] rounded-[8px] bg-[#E7816B] text-center text-[16px] leading-[26px] text-white hover:bg-[#FFAD9B] hover:text-white"
+          >
             SEE LOCATION
           </button>
         </div>
@@ -55,7 +63,10 @@ const AboutLocationCard = ({ location }) => {
           <h1 className="mb-[32px] text-[20px] font-medium leading-[26px] tracking-[5px] text-[#333136]">
             UNITED KINGDOM
           </h1>
-          <button className="h-[56px] w-[152px] rounded-[8px] bg-[#E7816B] text-center text-[16px] leading-[26px] text-white hover:bg-[#FFAD9B] hover:text-white">
+          <button
+            onClick={() => router.push("/locations")}
+            className="h-[56px] w-[152px] rounded-[8px] bg-[#E7816B] text-center text-[16px] leading-[26px] text-white hover:bg-[#FFAD9B] hover:text-white"
+          >
             SEE LOCATION
           </button>
         </div>

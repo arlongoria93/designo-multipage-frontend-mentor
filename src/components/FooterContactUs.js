@@ -11,9 +11,9 @@ import Image from "next/image";
 
 const FooterContactUs = () => {
   return (
-    <div className=" mt-[136px] flex w-full flex-col items-center bg-[#1D1C1E] px-8  ">
-      <div className=" flex w-full flex-col items-center gap-[32px] py-16 ">
-        <div className="flex w-full flex-col items-center   gap-[32px] md:flex-row md:justify-between">
+    <div className=" mt-[311px] flex  w-full flex-col items-center bg-[#1D1C1E] py-12 md:mt-[156px] ">
+      <div className=" flex w-full flex-col items-center gap-[32px]  md:w-[690px] lg:w-[1111px]">
+        <div className="flex flex-col items-center gap-[32px]   md:w-full md:flex-row md:justify-between">
           <Link href="/">
             <Image
               src="/assets/shared/desktop/logo-light.png"
@@ -22,10 +22,10 @@ const FooterContactUs = () => {
               alt="logo"
             />
           </Link>
-          <div className="h-[1px] w-full bg-[#fff] opacity-10 md:hidden"></div>
+          <div className="h-[1px] w-[327px] bg-[#fff] opacity-10 md:hidden"></div>
 
           <div className="flex flex-col items-center gap-[32px] leading-[14px] tracking-[2px] text-white md:flex-row">
-            <Link href="/company">
+            <Link href="/about">
               <h1>OUR COMPANY</h1>
             </Link>
             <Link href="/locations">
@@ -36,8 +36,8 @@ const FooterContactUs = () => {
             </Link>
           </div>
         </div>
-        <div className="mt-[40px] hidden h-[1px] bg-[#fff] opacity-10 md:block md:w-full "></div>
-        <div className="flex flex-col gap-[40px] md:w-[690px] md:flex-row md:justify-between  md:gap-[10px] lg:w-full">
+        <div className="mt-[40px] hidden h-[1px] w-[690px] bg-[#fff] opacity-10 md:block lg:w-[1111px]"></div>
+        <div className="flex flex-col gap-[40px] md:w-[690px] md:flex-row md:justify-between  md:gap-[10px] lg:w-[1111px]">
           <div className="flex flex-col items-center leading-[26px] text-white  opacity-[0.5] md:text-[16px]">
             <h1 className="font-bold">Designo Central Office</h1>
             <h1>3886 Wellington Street</h1>
