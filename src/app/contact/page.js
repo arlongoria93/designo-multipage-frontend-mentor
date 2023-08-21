@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Footer from "@/components/Footer/Footer";
 import AboutLocationCard from "@/components/AboutLocationCard/AboutLocationCard";
+import FooterContactUs from "@/components/FooterContactUs";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -23,6 +24,12 @@ const Contact = () => {
     } else {
       console.log("Invalid email address");
     }
+    // make sure all fields are filled
+    if (!name || !email || !phone || !message) {
+      alert("Please fill out all fields.");
+      return;
+    }
+
     e.preventDefault();
     const body = {
       name,
@@ -77,42 +84,38 @@ const Contact = () => {
                 name="name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full bg-[#E7816B] p-2 px-2 py-4 text-white placeholder:pl-2 placeholder:text-white placeholder:opacity-50"
+                className="w-full border-b bg-[#E7816B] p-2 px-2 py-4 text-white  placeholder:pl-2 placeholder:text-white placeholder:opacity-50 hover:border-b-2 hover:border-white hover:placeholder:opacity-100 focus:outline-none"
               />
               {/* divider */}
-              <div className="h-[1px] w-full bg-[#fff]"></div>
               <input
                 type="text"
                 name="email"
                 value={email}
                 placeholder="Email Address"
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full bg-[#E7816B]  px-2 py-4 text-white placeholder:pl-2 placeholder:text-white placeholder:opacity-50"
+                className="w-full border-b bg-[#E7816B] p-2 px-2 py-4 text-white  placeholder:pl-2 placeholder:text-white placeholder:opacity-50 hover:border-b-2 hover:border-white hover:placeholder:opacity-100 focus:outline-none"
               />
-              <div className="h-[1px] w-full bg-[#fff]"></div>
               <input
                 type="text"
                 name="phone"
                 value={phone}
                 placeholder="Phone"
                 onChange={(e) => setPhone(e.target.value)}
-                className="w-full   bg-[#E7816B] px-2   py-4  text-white placeholder:pl-2 placeholder:text-white placeholder:opacity-50"
+                className="w-full border-b bg-[#E7816B] p-2 px-2 py-4 text-white  placeholder:pl-2 placeholder:text-white placeholder:opacity-50 hover:border-b-2 hover:border-white hover:placeholder:opacity-100 focus:outline-none"
               />
-              <div className="h-[1px] w-full bg-[#fff]"></div>
               <textarea
                 type="text"
                 name="message"
                 value={message}
                 placeholder="Your Message"
                 onChange={(e) => setMessage(e.target.value)}
-                className="h-[126px] w-full bg-[#E7816B] p-2 text-white placeholder:pl-2 placeholder:pt-2 placeholder:text-white placeholder:opacity-50"
+                className="w-full border-b bg-[#E7816B] p-2 px-2 py-4 text-white  placeholder:pl-2 placeholder:text-white placeholder:opacity-50 hover:border-b-2 hover:border-white hover:placeholder:opacity-100 focus:outline-none"
               />
-              <div className="h-[1px] w-full bg-[#fff]"></div>{" "}
               <button
                 type="submit"
-                className="mt-10 h-[56px] w-[152px] self-center rounded-lg bg-white md:self-end"
+                className="mt-10 h-[56px] w-[152px] self-center rounded-lg bg-white hover:bg-[#FFAD9B] hover:text-white focus:outline-none md:self-end"
               >
-                Submit
+                SUBMIT
               </button>
             </div>
           </div>
@@ -124,7 +127,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <Footer />
+      <FooterContactUs />
     </>
   );
 };
