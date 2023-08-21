@@ -5,31 +5,9 @@ import "leaflet-defaulticon-compatibility";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
-// const MapContainer = dynamic(
-//   () => import("react-leaflet").then((mod) => mod.MapContainer),
-//   {
-//     ssr: false,
-//   },
-// );
-// const TileLayer = dynamic(
-//   () => import("react-leaflet").then((mod) => mod.TileLayer),
-//   {
-//     ssr: false,
-//   },
-// );
-// const Marker = dynamic(
-//   () => import("react-leaflet").then((mod) => mod.Marker),
-//   {
-//     ssr: false,
-//   },
-// );
-// const Popup = dynamic(() => import("react-leaflet").then((mod) => mod.Popup), {
-//   ssr: false,
-// });
-
 const LocationGPS = ({ loc, display }) => {
   return (
-    <div className="flex w-full flex-col items-center justify-center lg:h-[320px] lg:w-[350px]">
+    <div className="z-10 flex w-full flex-col items-center justify-center lg:h-[320px] lg:w-[350px]">
       <MapContainer
         center={loc}
         zoom={13}
