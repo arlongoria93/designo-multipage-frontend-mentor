@@ -47,7 +47,7 @@ const Footer = () => {
           <div className="h-[1px] w-[327px] bg-[#fff] opacity-10 md:hidden"></div>
 
           <div className="flex flex-col items-center gap-[32px] leading-[14px] tracking-[2px] text-white md:flex-row">
-            <Link href="/company">
+            <Link href="/about">
               <h1>OUR COMPANY</h1>
             </Link>
             <Link href="/locations">
