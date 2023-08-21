@@ -33,7 +33,7 @@ const locations = [
 const Locations = () => {
   return (
     <>
-      <div className="mx-auto flex w-full flex-col  gap-[26px] lg:w-[1111px]">
+      <div className="z-10 mx-auto flex w-full  flex-col gap-[26px] lg:w-[1111px]">
         {locations.map((location) => (
           <LocationComponent
             name={location.name}
