@@ -1,6 +1,5 @@
-import Hero from "@/components/Hero/Hero";
-import HomeContent from "@/components/HomeContent/HomeContent";
-import MobileLayout from "@/components/MobileLayout";
+import Hero from "@/components/Hero";
+import HomeContent from "@/components/HomeContent";
 
 export default function Home() {
   return (

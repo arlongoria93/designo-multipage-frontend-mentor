@@ -1,8 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Footer from "@/components/Footer/Footer";
-import AboutLocationCard from "@/components/AboutLocationCard/AboutLocationCard";
+import AboutLocationCard from "@/components/AboutLocationCard";
 import FooterContactUs from "@/components/FooterContactUs";
 
 const Contact = () => {

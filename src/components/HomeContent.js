@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import MobileCardLink from "@/components/MobileCardLink/MobileCardLink";
-import TabletCardLink from "../TabletCardLink/TabletCardLink";
-import DesktopCardLink from "../DesktopCardLink";
+import MobileCardLink from "@/components/MobileCardLink";
+import TabletCardLink from "./TabletCardLink";
+import DesktopCardLink from "./DesktopCardLink";
 import Link from "next/link";
 import { IconRightArrow } from "@/components/svgs";
 import {
@@ -10,14 +10,8 @@ import {
   IllustrationFriendly,
   IllustrationPassionate,
   IllustrationResourceful,
-  BackgroundPatternDesignPagesIntroMobile,
-  IconFacebook,
-  IconInstagram,
-  IconTwitter,
-  IconPinterest,
-  IconYoutube,
 } from "@/components/svgs";
-import Footer from "../Footer";
+import Footer from "./Footer";
 const mobileCardLinks = [
   ["WEB DESIGN", "/assets/home/mobile/image-web-design.jpg", "Web Design"],
   ["APP DESIGN", "/assets/home/mobile/image-app-design.jpg", "App Design"],

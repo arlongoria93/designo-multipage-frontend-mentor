@@ -1,8 +1,8 @@
 import React from "react";
-import MobileCardLink from "@/components/MobileCardLink/MobileCardLink";
+import MobileCardLink from "@/components/MobileCardLink";
 import TabletCardLink from "./TabletCardLink";
 import DesktopCardLink from "./DesktopCardLink";
-import ImageCardWebDesign from "../ImageCardWebDesign/ImageCardWebDesign";
+import ImageCardWebDesign from "../ImageCardWebDesign";
 import Footer from "./Footer";
 const mobileCardLinks = [
   ["APP DESIGN", "/assets/home/mobile/image-app-design.jpg", "App Design"],

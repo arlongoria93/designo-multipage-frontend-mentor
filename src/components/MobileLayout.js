@@ -1,7 +1,6 @@
 import React from "react";
-import Navbar from "./navbar";
 import Hero from "./Hero";
-import HomeContent from "./HomeContent/HomeContent";
+import HomeContent from "./HomeContent";
 
 const MobileLayout = () => {
   return (
